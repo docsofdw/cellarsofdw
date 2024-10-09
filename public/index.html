@@ -32,7 +32,6 @@
     <meta name="twitter:site" content="@cellarsofdw">
     
     <!-- Schema Markup (Structured Data for Rich Snippets) -->
-    <!-- 
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -106,7 +105,6 @@
       }
     }
     </script>
-    -->
     
     <!-- Canonical Link -->
     <link rel="canonical" href="https://cellarsofdw.com/">
@@ -182,6 +180,9 @@
             </nav>
             <div class="hidden md:block">
               <a
+                href="https://www.instagram.com/drinksofdw/"
+                target="_blank"
+                rel="noopener noreferrer"
                 href="mailto:waldropduke@gmail.com"
                 class="inline-block px-8 py-3 text-lg font-semibold text-black bg-gradient-to-r from-red-400 to-red-600 rounded-full hover:from-red-500 hover:to-red-700 transition duration-300 transform hover:scale-105 shadow-lg"
               >
@@ -190,7 +191,7 @@
             </div>
             <div class="md:hidden">
               <button
-                id="hamburger-button"
+                id="mobile-menu-button"
                 class="text-white hover:text-red-300 focus:outline-none"
               >
                 <svg
@@ -1007,8 +1008,10 @@
           </div>
           <div class="mt-16 text-center">
             <a
-              href="mailto:your-email@example.com"
-              class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-full shadow-md text-white bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 transition duration-300 ease-in-out transform hover:scale-105"
+            href="https://www.instagram.com/drinksofdw/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-8 py-3 border border-transparent text-lg font-medium rounded-full shadow-md text-white bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 transition duration-300 ease-in-out transform hover:scale-105"
             >
               Let's Talk Wine
               <svg
@@ -1750,5 +1753,15 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/charts-demo.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      });
+    </script>
   </body>
 </html>
