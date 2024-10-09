@@ -125,6 +125,11 @@
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"
       defer
     ></script>
+    <style>
+      .hidden {
+        display: none !important;
+      }
+    </style>
   </head>
   <body class="antialiased bg-body text-body font-body">
     <div class="">
@@ -1748,11 +1753,12 @@
         console.log('Mobile Menu:', mobileMenu);
 
         if (mobileMenuButton && mobileMenu) {
-          mobileMenuButton.addEventListener('click', function() {
+          mobileMenuButton.addEventListener('click', function(event) {
             console.log('Button clicked');
-            this.style.backgroundColor = this.style.backgroundColor === 'red' ? '' : 'red';
+            event.preventDefault(); // Prevent any default button behavior
             mobileMenu.classList.toggle('hidden');
             console.log('Hidden class toggled');
+            console.log('Mobile menu classes:', mobileMenu.className);
           });
         } else {
           console.error('Mobile menu button or mobile menu not found');
