@@ -151,27 +151,37 @@
                 Cellarsofdw
               </h1>
             </div>
-            <nav class="hidden md:flex space-x-8">
-              <a
-                href="#services"
-                class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
-                >Services</a
-              >
-              <a
-                href="#featured-wines"
-                class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
-                >Wines</a
-              >
-              <a
-                href="#offerings"
-                class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
-                >Offerings</a
-              >
-              <a
-                href="#contact"
-                class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
-                >Contact</a
-              >
+            <nav class="hidden lg:block">
+              <ul class="flex space-x-8">
+                <li>
+                  <a
+                    href="#services"
+                    class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#featured-wines"
+                    class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
+                    >Wines</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#offerings"
+                    class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
+                    >Offerings</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-white hover:text-red-300 font-medium transition duration-300 ease-in-out"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </nav>
             <div class="hidden md:block">
               <a
@@ -184,17 +194,33 @@
                 Schedule a Consultation
               </a>
             </div>
-            <button id="mobile-menu-button" class="md:hidden">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-            </button>
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-white hover:text-red-300 focus:outline-none"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         <!-- Mobile menu -->
         <div
           id="mobile-menu"
-          class="md:hidden hidden bg-black border-t border-gray-800"
+          class="lg:hidden hidden bg-black border-t border-gray-800"
         >
           <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
