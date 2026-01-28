@@ -1,37 +1,36 @@
-# The Shuffle Editor (https://shuffle.dev)
+# Cellars of DW
 
-NOTE: npm commands overwrite the ./public directory.
+Professional wine cellar management and sommelier services website for Nashville.
 
-## 1. Getting Started
+## Tech Stack
 
-Project's source files are placed in ./src/ directory. 
-* ./src/assets - default static files (eg. image placeholders). You should replace them with your own files.
-* ./src/tailwind/ - Tailwind config file used to build the theme. Variables used in Theme Customizer are located in tailwind.config.js file.
+- **Pug** - HTML templating
+- **Tailwind CSS** - Utility-first styling
+- **Alpine.js** - Lightweight interactivity
 
-All your pages (templates) are stored in separated .pug or .html files (depends on your export preferences)
-* ./src/pug/*.pug 
-* ./src/html/*.html 
+## Development
 
-## 2. Installation
-
-```
+```bash
 # Install dependencies
-npm install 
+npm install
 
-# Run dev server with live preview (Browsersync)
+# Run dev server with live reload
 npm run watch
 
-# Or make a production build 
+# Production build
 npm run build
 ```
 
-## 3. Contact
+## Project Structure
 
-If you have found any bugs in the Tailwind Builder, have any questions, 
-comments or ideas for new features feel free to contact us:
+```
+src/
+├── pug/           # Page templates
+├── tailwind/      # Tailwind config & base CSS
+└── assets/
+    └── images/    # Site images & logos
+```
 
-support@shuffle.dev
+## Build Output
 
-## 4. Credits & Special thanks
-
-We use placeholders from https://unsplash.com/
+Built files are output to `public/` directory.
